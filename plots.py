@@ -1,10 +1,22 @@
 #https://matplotlib.org/tutorials/introductory/pyplot.html
 #https://numpy.org/doc/stable/reference/generated/numpy.genfromtxt.html
+"""
+Created on Oct 12 21:53:59 2020
+@author: Adanna Obibuaku
+This is purpose of this file, is used to illustrate plots based
+on the data from PSO and GA.
+"""
 
 import matplotlib.pyplot as plt
 import numpy as np
 
 def plots(*args):
+    """
+        Description:
+            This function is used for drawing the plots on the graphs
+        Args:
+            *args (str): This takes an array of arugments of csv files
+     """
     for arg in args:
         generation = np.genfromtxt(arg[0], delimiter=",", skip_header=1, usecols=0)
         bestFits = np.genfromtxt(arg[0], delimiter=",", skip_header=1, usecols=1)
@@ -16,6 +28,13 @@ def plots(*args):
     plt.show()
 
 def threePlots(*args):
+    """
+        Description:
+            This function is used for drawing plots on graphs. This would be used
+            to illutrsates the plots of best fitness, average fitness and worst fitness
+        Args:
+            *args (str): This takes an array of arugments of csv files
+     """
     fig,a =  plt.subplots(1,3, figsize=(20,5))
     for arg in args:
         generation = np.genfromtxt(arg[0], delimiter=",", skip_header=1, usecols=0)
@@ -57,7 +76,6 @@ if __name__ == "__main__":
         (fname+"8.csv", para + "8"),
         (fname+"9.csv", para + "9"),
         (fname+"10.csv", para + "10"),
-
     )
 
 
