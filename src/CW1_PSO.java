@@ -119,7 +119,7 @@ public class CW1_PSO {
 
 	public static void main(String[] args) {
 		CW1_PSO alg = new CW1_PSO();
-		String fname = "PSO/Scenario1.config"; // <-- change to PSO/Scenario2.config to get the file settings
+		String fname = "PSO/Scenario1.config"; // <-- change to PSO/Scenario2.config to get scenario 2 settings
 		alg.parseParams(fname);
 		alg.run();
 	}

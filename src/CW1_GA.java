@@ -131,7 +131,7 @@ public class CW1_GA {
 
 	public static void main(String[] args) {
 		CW1_GA alg = new CW1_GA();
-		String fname = "GA/Scenario1.config"; // <-- change to GA/Scenario2.config to get the file settings
+		String fname = "GA/Scenario1.config"; // <-- change to GA/Scenario2.config to scenario 2 settings
 		alg.parseParams(fname);
 		alg.run();
 	}
