@@ -4,15 +4,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-"""def plot(fname):
-    generation = np.genfromtxt(fname, delimiter=",", skip_header=1, usecols=0)
-    bestFits = np.genfromtxt(fname, delimiter=",", skip_header=1, usecols=1)
-    plt.plot(generation, bestFits, "r-")
-    plt.xlabel("Generation")
-    plt.ylabel("Avg Best Fit")
-    plt.show()"""
-
-
 def plots(*args):
     for arg in args:
         generation = np.genfromtxt(arg[0], delimiter=",", skip_header=1, usecols=0)
@@ -69,10 +60,6 @@ if __name__ == "__main__":
 
     )
 
-    '''threePlots( ("PSO/interweight/data_7.csv", "Personal: 1, Global: 2, Interia: 7"),
-    ("PSO/interweight2/data_5.csv", "Personal: 2, Global: 1, Interia: 5"),
-    ("PSO/interweight6/data_1.csv", "Personal: 6, Global: 1, Interia: 1"),
-    ("PSO/interweight10/data_5.csv", "Personal: 10, Global: 1, Interia: 5"),  )'''
 
     
    
