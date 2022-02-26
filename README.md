@@ -1,3 +1,5 @@
+# Biologically-inspired computing for optimisation
+
 This was made as part of CSC3423 coursework
 
 The objective of this coursework is to use biologically-inspired computing for optimisation. 
@@ -26,8 +28,4 @@ Notes:
 detail the code you have been provided with and how to use it.
 - The parameters used in provided code are specified in a configuration file. You can 
 optimise the methods by hand using a trial-and-error procedure, or you can systematically 
-explore the range of values for the different parameters. I would recommend that you write 
-some extra code to automati
-
-# Biological-algorthiums
-Coursework 1: Biologically-inspired computing for optimisation
+explore the range of values for the different parameters. 
